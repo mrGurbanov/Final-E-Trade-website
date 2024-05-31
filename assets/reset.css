@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM sans', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+button, input {
+    outline: none;
+    all: unset;
+}
+ul {
+    list-style: none;
+}
+img {
+    /* width: 100%; */
+    vertical-align: middle;
+}
+
+.container {
+    width: 85%;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+.flex {
+    display: flex;
+}
+.aic {
+    align-items: center;
+}
+.jcc {
+    justify-content: center;
+}
+.jcsb {
+    justify-content: space-between;
+}
+.tc {
+    text-align: center;
+}
+.flex-col {
+    flex-direction: column;
+}
+
+
+
+/* ================= colors ================= */
+
+:root {
+    --text-color-black: #292930;
+    --bg-color: rgba(0, 0, 0, 0);
+    --transition: 0.3s;
+    --shadow-primary: 0px 4px 10px rgba(37, 47, 63, 0.1);
+    --shadow-light: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+    --shadow-dark: 0 16px 32px 0 rgba(0, 0, 0, 0.04);
+    --shadow-megamenu: 40px 40px 48px 0px rgba(36,41,47,.1);
+    --transition: 0.3s;
+    --border-clr: #f0f0f0;
+    --light-red-clr: #ff497c;
+    --nav-clr: #f7f7f7;
+    --blue-clr: #3577F0;
+    --nav-text-clr: #999999;
+    --megamenu-clr: #777777;
+    --arrival-clr: #f6f7fb;
+    --purple-clr: #8c71db;
+}
