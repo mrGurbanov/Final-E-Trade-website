@@ -655,6 +655,58 @@ main {
                         }
                     }
                 }
+
+                .next-arrow {
+                    left: auto;
+                    right: 110px;
+                    top: 0px;
+                    position: absolute;
+                    width: 40px;
+                    height: 50px;
+                    background-color: var(--arrival-clr);
+                    color: var(--megamenu-clr);
+                    outline: none;
+                    border: none;
+                    border-radius: 6px;
+                    z-index: 2;
+                    cursor: pointer;
+                    vertical-align: baseline;
+                    padding: 1px 6px;
+                    text-align: center;
+                    scale: 1;
+                    transition: var(--transition);
+
+
+                    &::before {
+                        content: "";
+                        height: 100%;
+                        width: 100%;
+                        background-color: var(--arrival-clr);
+                        border-radius: 6px;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        z-index: -1;
+                        /* transition: transform .5s cubic-bezier(0.165, 0.84, 0.44, 1); */
+                    }
+
+                    &:hover {
+                        scale: 1.1;
+                        color: var(--purple-clr);
+
+                        >i {
+                            scale: 1.2;
+                        }
+                    }
+
+                    >i {
+                        display: inline-block;
+                        scale: 1;
+                        transition: 150ms ease;
+                    }
+                }
             }
         }
     }
