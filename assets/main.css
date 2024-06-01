@@ -709,5 +709,251 @@ main {
                 }
             }
         }
+
+        .best-sellers {
+            padding-bottom: 50px;
+            padding-top: 80px;
+            background-color: #fff;
+
+            .container {
+
+                .section-title {
+                    margin-bottom: 40px;
+                    padding-right: 100px;
+
+                    .title-arrivals {
+                        color: var(--light-red-clr);
+                        font-size: 14px;
+                        line-height: 1;
+                        margin-bottom: 10px;
+                        position: relative;
+                        font-weight: 700;
+
+                        >i {
+                            height: 24px;
+                            width: 24px;
+                            line-height: 24px;
+                            border-radius: 50%;
+                            font-size: 14px;
+                            text-align: center;
+                            margin-right: 10px;
+                            display: inline-block;
+                            color: white;
+                            /* position: absolute; */
+                            background-color: var(--light-red-clr);
+                        }
+                    }
+                    h2 {
+                        font-size: 36px;
+                        font-weight: 700;
+                        margin-bottom: 30px;
+
+                    }
+                }
+
+                .best-sellers-arriwal {
+                    position: relative;
+
+                    .prev-arrow {
+                        left: auto;
+                        right: 58px;
+                        top: -120px;
+                        position: absolute;
+                        width: 40px;
+                        height: 50px;
+                        background-color: var(--arrival-clr);
+                        color: var(--megamenu-clr);
+                        outline: none;
+                        border: none;
+                        border-radius: 6px;
+                        z-index: 2;
+                        cursor: pointer;
+                        vertical-align: baseline;
+                        padding: 1px 6px;
+                        text-align: center;
+                        scale: 1;
+                        transition: var(--transition);
+
+
+                        &::before {
+                            content: "";
+                            height: 100%;
+                            width: 100%;
+                            background-color: var(--arrival-clr);
+                            border-radius: 6px;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            z-index: -1;
+                            /* transition: transform .5s cubic-bezier(0.165, 0.84, 0.44, 1); */
+                        }
+
+                        &:hover {
+                            scale: 1.1;
+                            color: var(--purple-clr);
+
+                            >i {
+                                scale: 1.2;
+                            }
+                        }
+
+                        >i {
+                            display: inline-block;
+                            scale: 1;
+                            transition: 150ms ease;
+                        }
+                    }
+                    .next-arrow {
+                        left: auto;
+                        right: 0px;
+                        top: -120px;
+                        position: absolute;
+                        width: 40px;
+                        height: 50px;
+                        background-color: var(--arrival-clr);
+                        color: var(--megamenu-clr);
+                        outline: none;
+                        border: none;
+                        border-radius: 6px;
+                        z-index: 2;
+                        cursor: pointer;
+                        vertical-align: baseline;
+                        padding: 1px 6px;
+                        text-align: center;
+                        scale: 1;
+                        transition: var(--transition);
+    
+    
+                        &::before {
+                            content: "";
+                            height: 100%;
+                            width: 100%;
+                            background-color: var(--arrival-clr);
+                            border-radius: 6px;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            z-index: -1;
+                            /* transition: transform .5s cubic-bezier(0.165, 0.84, 0.44, 1); */
+                        }
+    
+                        &:hover {
+                            scale: 1.1;
+                            color: var(--purple-clr);
+    
+                            >i {
+                                scale: 1.2;
+                            }
+                        }
+    
+                        >i {
+                            display: inline-block;
+                            scale: 1;
+                            transition: 150ms ease;
+                        }
+                    }
+                    .slick-list {
+                        margin: 0 -15px;
+                        margin-top: 20px;
+                        position: relative;
+                        display: block;
+                        padding: 0;
+
+                        .slick-track {
+                            opacity: 1;
+                            width: 6600px;
+                            /* transform: translate3d(-1320px, 0px, 0px); */
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            display: block;
+                            margin-inline: auto;
+
+                            .slick-single {
+                                width: 330px;
+                                margin-top: 20px;
+                                outline: none;
+                                margin-bottom: 0;
+                                padding: 0 15px;
+                                float: left;
+                                height: 100%;
+                                min-height: 1px;
+
+                                .bs-product {
+                                    position: relative;
+
+                                    .product-content {
+                                        margin: 0;
+                                        padding: 40px 30px 0;
+                                        .cart-btn {
+                                            position: absolute;
+                                            top: -20px;
+                                            right: 20px;
+
+                                            a {
+                                                display: inline-block;
+                                                text-align: center;
+                                                width: 45px;
+                                                height: 45px;
+                                                line-height: 46px;
+                                                background-color: var(--arrival-clr);
+                                                border: 2px solid #fff;
+                                                color: var(--blue-clr);
+                                                font-size: 18px;
+                                                border-radius: 50%;
+                                                transition: var(--transition);
+
+                                                &:hover {
+                                                    background-color: var(--blue-clr);
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
+                                        > .inner {
+                                            > .title {
+
+                                            }
+                                            >.product-price {
+                                                >.current-price {
+
+                                                }
+                                                >.old-price {
+
+                                                }
+                                            }
+                                            .product-rating {
+
+                                                >.icon {
+
+                                                    >i {
+
+                                                    }
+                                                }
+                                                .rating-number {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .thumbnail {
+
+                                        a {
+
+                                            img {
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
