@@ -63,9 +63,12 @@ img {
     --light-red-clr: #ff497c;
     --nav-clr: #f7f7f7;
     --blue-clr: #3577F0;
+    --blue-hover-clr: #033fb0;
     --nav-text-clr: #999999;
     --megamenu-clr: #777777;
     --arrival-clr: #f6f7fb;
     --purple-clr: #8c71db;
     --old-price-clr: #d6d6d6;
+    --star-clr: #ffdc60;
+    --bs-cart-bg: #f6f6f6;
 }
