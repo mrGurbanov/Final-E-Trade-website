@@ -1,0 +1,23 @@
+.back-to-top {
+    bottom: 40px;
+    right: 40px;
+    opacity: 1;
+    transform: scale(1);
+    position: fixed;
+    display: block;
+    width: 45px;
+    height: 45px;
+    line-height: 46px;
+    background-color: var(--blue-clr);
+    color: #fff;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .2);
+    z-index: 9;
+    transition: var(--transition);
+
+    &:hover {
+        bottom: 50px;
+    }
+    
+}

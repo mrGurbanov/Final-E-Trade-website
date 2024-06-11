@@ -143,18 +143,19 @@ header {
                     position: absolute;
                     border: 1px solid var(--border-clr);
 
-                    ul {
+                   > ul {
 
-                        li {
+                        >li {
                             padding-inline: 30px;
                             position: relative;
 
                             &:hover > .megamenu {
-                                display: block; 
+                               
+                               display: block;
                                 opacity: 1;
                                 /* visibility: visible; */
                             }
-
+   
                             > a {
                                 display: flex;
                                 justify-content: space-between;
@@ -167,7 +168,6 @@ header {
                                     border-bottom: 0;
                                 }
 
-
                                 &:hover {
                                     >.menu-text {
                                         color: var(--text-color-black);
@@ -176,9 +176,7 @@ header {
                                     >i {
                                         color: var(--blue-clr);
                                         rotate: -90deg;
-                                    }
-
-                                    
+                                    }                                   
                                 }
 
                                 .menu-icon {
@@ -198,9 +196,7 @@ header {
                                     color: var(--nav-text-clr);
                                     transition: var(--transition);
                                 }
-
-
-                            }
+                            }           
 
                             .megamenu {
                                 position: absolute;
@@ -215,7 +211,9 @@ header {
                                 box-shadow: var(--shadow-megamenu);
                                 display: none;
                                 opacity: 0;
-                                transition: all .5s ease-in-out;
+                                transition:  .5s ease-in-out;
+                                transition-property: opacity;
+                                transition-delay: .5s opacity;
 
                                 .megamenu-wrapper {
                                     padding: 30px;
@@ -335,8 +333,9 @@ header {
                 font-weight: 600;
                 padding-inline: 28px;
 
-                ul {
-                    li {
+                > .nav-ul {
+
+                    > .nav-li {
                         margin-inline: 20px;
                         padding: 5px 10px;
                         padding-left: 0;
@@ -352,13 +351,31 @@ header {
                             .dropDownUl {
                                 opacity: 1;
                                 visibility: visible;
-                                top: 100%;
+                                top: 130%;
                                 z-index: 11111;
                             }
+                            
+                            &::before {
+                                width: 85%;
+                                opacity: 1;
+                            }
+                            
+                        }
+                        &::before {
+                            content: "";
+                            height: 2px;
+                            width: 0%;
+                            background-color: var(--text-color-black);
+                            position: absolute;
+                            top: 29px;
+                            left: 0;
+                            opacity: 0;
+                            transition: .5s;
                         }
 
-                        >a {
+                        a {
                             color: var(--text-color-black);
+
                         }
 
                         .dropDownUl {

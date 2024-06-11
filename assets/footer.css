@@ -1,0 +1,87 @@
+footer {
+    
+    .footer-top {
+        padding-top: 50px;
+
+        .container {
+
+            .row {
+                
+                .col {
+                    width: 25%;
+                    flex: 0 0 auto;
+                    padding-inline: 15px;
+
+                    .widget {
+                        margin-bottom: 40px;
+
+                        h5 {
+                            font-weight: 600;
+                            font-size: 18px;
+                            margin-bottom: 20px;
+                            letter-spacing: -0.025em;
+                        }
+                        .inner {
+                            span {
+                                color: var(--megamenu-clr);
+                            }
+    
+                            p {
+                                margin-bottom: 30px;
+                                font-size: 16px;
+                                line-height: 1.7;
+                                font-weight: 400;
+                                color: var(--megamenu-clr);
+                                padding-right: 120px;
+                            }
+                            .left {
+    
+                                .foot-li {
+                                    margin-bottom: 12px;
+                                    position: relative;
+                                    color: var(--megamenu-clr);
+
+                                    a {
+                                        padding-left: 26px;
+                                        color: inherit;
+                                    }
+                                }
+                                .li-two {
+                                    margin-block: 12px;
+                                }
+                            }
+
+                            .btn-group {
+                                margin-top: 15px;
+
+                                .qr-code {
+                                    margin-right: 20px;
+                                }
+                                .app-link {
+                                    flex: 1;
+                                    flex-direction: column;
+
+                                    .app-store {
+                                        margin-bottom: 15px;
+                                    }
+                                }
+                            }
+                            > ul {
+                                margin-bottom: 30px;
+
+                                > li {
+                                    margin-bottom: 12px;
+                                    > a {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        color: var(--megamenu-clr);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
