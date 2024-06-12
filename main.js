@@ -44,12 +44,22 @@ function toggleDropmenu(btnElement, listElement) {
 toggleDropmenu(moneyBtn, moneyUl);
 toggleDropmenu(langBtn, langUl);
 
-// document.querySelectorAll(".nav-menu > ul > li:hover > .megamenu").style.display = 'block';
-// const liElements = document.querySelectorAll(".nav-menu > ul > li");
-// for(let i = 0;i< liElements.length;i++){
-//     const liElement = liElements[i];
 
-//     liElement.addEventListener('mouseover',()=>{
-//         liElement.children[1].style.display = 'block';
-//     })
-// }
+
+const backToTop = document.getElementById("backToTop")
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        backToTop.classList.add("active");
+    } else {
+        backToTop.classList.remove("active");
+    }
+})
+
+//     function backToTop () {
+//         window.scrollTo(0, 0);
+        
+        
+//     }
+// console.log(backToTop);
+
+

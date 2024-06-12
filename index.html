@@ -14,8 +14,8 @@
     <script src="./main.js" type="module" defer></script>
     <title>Document</title>
   </head>
-  <body>
-    <a href="#top" class="back-to-top" id="backToTop">
+  <body style="scroll-behavior: smooth;">
+    <a href="#" class="back-to-top" id="backToTop">
       <i class="fa-solid fa-arrow-up"></i>
     </a>
     <header>
@@ -1911,7 +1911,7 @@
                     <span></span>
                     <input type="text" placeholder="example@gmail.com">
                   </div>
-                  <button class="btn-subs" type="submit">Subscribe</button>
+                  <button class="btn-subs" type="submit" style="cursor: pointer;">Subscribe</button>
                 </div>
               </div>
             </div>
@@ -2053,5 +2053,62 @@
         </div>
       </div> -->
     </footer>
+    <div class="cart-sidebar">
+      <div class="cart-content">
+        <div class="cart-header">
+          <h2 class="header-title">Cart review</h2>
+          <button class="close-btn">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </button>
+        </div>
+        <div class="cart-body">
+          <ul class="cart-item">
+            <li>
+              <div class="item-img">
+                <a href="">
+                  <img src="" alt="">
+                </a>
+                <button class="close-btn"></button>
+                <div class="item-content">
+                  <div class="product-rating">
+                    <span class="icon"></span>
+                    <span class="rating-number"></span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-img">
+                <a href="">
+                  <img src="" alt="">
+                </a>
+                <button class="close-btn"></button>
+                <div class="item-content">
+                  <div class="product-rating">
+                    <span class="icon"></span>
+                    <span class="rating-number"></span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-img">
+                <a href="">
+                  <img src="" alt="">
+                </a>
+                <button class="close-btn"></button>
+                <div class="item-content">
+                  <div class="product-rating">
+                    <span class="icon"></span>
+                    <span class="rating-number"></span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="cart-footer"></div>
+      </div>
+    </div>
   </body>
 </html>
