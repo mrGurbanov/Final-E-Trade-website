@@ -61,9 +61,10 @@ img {
     --transition: 0.3s;
     --border-clr: #f0f0f0;
     --light-red-clr: #ff497c;
+    --light-red-hover-clr: #f90047;
     --nav-clr: #f7f7f7;
     --blue-clr: #3577F0;
-    --blue-hover-clr: #033fb0;
+    --blue-hover-clr: #0059ff;
     --nav-text-clr: #999999;
     --megamenu-clr: #777777;
     --arrival-clr: #f6f7fb;
@@ -72,4 +73,5 @@ img {
     --star-clr: #ffdc60;
     --bs-cart-bg: #f6f6f6;
     --user-feed-bg-clr: #f9f3f0;
+    
 }

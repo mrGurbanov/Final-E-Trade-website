@@ -465,41 +465,49 @@ main {
                                     .thumbnail {
                                         text-align: center;
                                         transition: var(--transition);
+                                        /* width: 330px;
+                                        height: 330px; */
 
                                         a {
-                                            display: block;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
                                             background-color: var(--nav-clr);
                                             border-radius: 6px;
                                             overflow: hidden;
                                             outline: none;
                                             cursor: pointer;
                                             transform: .5s;
+                                            text-align: center;
 
                                             >img {
                                                 border-radius: 6px;
-                                                width: 100%;
+                                                height: 300px;
                                                 transition: var(--transition);
                                                 opacity: 1;
                                                 display: block;
                                                 border: 0;
                                                 scale: 1;
                                                 visibility: visible;
+                                                text-align: center;
 
                                             }
 
                                             >.hover-img {
-                                                width: 100%;
+                                                height: 300px;
                                                 position: absolute;
                                                 top: 0;
-                                                left: 0;
-                                                right: 0;
+                                                /* left: 0; */
+                                                /* right: 0; */
                                                 bottom: 0;
                                                 visibility: hidden;
                                                 opacity: 0;
                                                 transition: var(--transition);
                                                 scale: .9;
                                                 overflow: clip;
-                                                overflow-clip-margin: content-box;
+                                                text-align: center;
+                                                /* overflow-clip-margin: content-box; */
+                                                
                                             }
 
                                             &:hover {
@@ -514,6 +522,9 @@ main {
                                                     opacity: 1;
                                                     scale: 1;
                                                     visibility: visible;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
                                                 }
                                             }
                                         }
@@ -577,13 +588,13 @@ main {
 
                                                 .select-add-to-cart {
 
-                                                    >a {
-                                                        width: 100%;
-                                                        height: 40px;
+                                                    > .cart-add {
+                                                        /* width: 100%; */
+                                                        /* height: 40px; */
                                                         line-height: 39px;
                                                         border-radius: 4px;
                                                         background-color: #fff;
-                                                        display: block;
+                                                        /* display: block; */
                                                         text-align: center;
                                                         transition: var(--transition);
                                                         font-weight: 700;
@@ -592,7 +603,8 @@ main {
                                                         background-color: var(--light-red-clr);
                                                         box-shadow: 0 16px 32px 0 rgba(0, 0, 0, .06);
                                                         position: relative;
-                                                        padding: 0 18px;
+                                                        margin-inline: auto;
+                                                        padding-inline: 5px;
                                                         z-index: 1;
                                                         cursor: pointer;
 

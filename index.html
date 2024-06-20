@@ -8,11 +8,9 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-    />
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="./main.js" type="module" defer></script>
-    <title>Document</title>
+    <title>E-Trade</title>
   </head>
   <body style="scroll-behavior: smooth;">
     <a href="#" class="back-to-top" id="backToTop">
@@ -570,9 +568,9 @@
           <div class="icons flex aic">
             <ul class="flex aic">
               <li><i class="fa-solid fa-heart"></i></li>
-              <li>
-                <i class="fa-solid fa-cart-shopping"></i
-                ><span class="flex aic jcc">10</span>
+              <li class="cartIcon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="flex aic jcc">10</span>
               </li>
               <li><i class="fa-solid fa-user-large"></i></li>
             </ul>
@@ -588,7 +586,7 @@
               <div class="col">
                 <div class="slider-box">
                   <div class="slider">
-                    <div class="top">
+                    <div class="top flex">
                       <div class="slide flex">
                         <div class="slide-content">
                           <span>
@@ -635,7 +633,7 @@
                         </div>
                       </div>
                     </div> -->
-                    <div class="bottom"></div>
+                    <!-- <div class="bottom"></div> -->
                     </div>
                     <ul class="bottom control-dots">
                       <li role="presentation"><button type="button" role="tab" id="main-btn-control"></button></li>
@@ -722,11 +720,11 @@
               <button class="prev-arrow">
                 <i class="fa-solid fa-arrow-left-long"></i>
               </button>
-              <div class="product-activation">
+              <!-- <div class="product-activation">
                 <div class="slick-list">
                   <div class="slick-track">
                     <div class="slick-single-layout">
-                      <div class="arrival-products">
+                      <div class="arrival-products" data-id="1">
                         <div class="thumbnail">
                           <a href="#">
                             <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-1.png" alt="">
@@ -743,9 +741,9 @@
                                 </a>
                               </li>
                               <li class="select-add-to-cart">
-                                <a href="#" class="cart-add">
+                                <button class="cart-add">
                                   Add to Cart
-                                </a>
+                                </button>
                               </li>
                               <li class="quickview">
                                 <a href="#">
@@ -771,349 +769,8 @@
                   </div>
                 </div>
               </div>
-              <div class="product-activation">
-                <div class="slick-list">
-                  <div class="slick-track">
-                    <div class="slick-single-layout">
-                      <div class="arrival-products">
-                        <div class="thumbnail">
-                          <a href="#">
-                            <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-1.png" alt="">
-                            <img class="hover-img" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-4.png" alt="">
-                          </a>
-                          <div class="product-off">
-                            <div class="off">20% OFF</div>
-                          </div>
-                          <div class="product-hover">
-                            <ul class="cart-action">
-                              <li class="wishlist">
-                                <a href="#">
-                                  <i class="fa-regular fa-heart"></i>
-                                </a>
-                              </li>
-                              <li class="select-add-to-cart">
-                                <a href="#" class="cart-add">
-                                  Add to Cart
-                                </a>
-                              </li>
-                              <li class="quickview">
-                                <a href="#">
-                                  <i class="fa-regular fa-eye"></i>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="inner">
-                            <h5>
-                              <a href="#">Top Handle Handbag</a>
-                            </h5>
-                            <div class="product-price">
-                              <span class="price old-price">$80</span>
-                              <span class="price new-price">$60</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-activation">
-                <div class="slick-list">
-                  <div class="slick-track">
-                    <div class="slick-single-layout">
-                      <div class="arrival-products">
-                        <div class="thumbnail">
-                          <a href="#">
-                            <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-1.png" alt="">
-                            <img class="hover-img" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-4.png" alt="">
-                          </a>
-                          <div class="product-off">
-                            <div class="off">20% OFF</div>
-                          </div>
-                          <div class="product-hover">
-                            <ul class="cart-action">
-                              <li class="wishlist">
-                                <a href="#">
-                                  <i class="fa-regular fa-heart"></i>
-                                </a>
-                              </li>
-                              <li class="select-add-to-cart">
-                                <a href="#" class="cart-add">
-                                  Add to Cart
-                                </a>
-                              </li>
-                              <li class="quickview">
-                                <a href="#">
-                                  <i class="fa-regular fa-eye"></i>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="inner">
-                            <h5>
-                              <a href="#">Top Handle Handbag</a>
-                            </h5>
-                            <div class="product-price">
-                              <span class="price old-price">$80</span>
-                              <span class="price new-price">$60</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-activation">
-                <div class="slick-list">
-                  <div class="slick-track">
-                    <div class="slick-single-layout">
-                      <div class="arrival-products">
-                        <div class="thumbnail">
-                          <a href="#">
-                            <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-1.png" alt="">
-                            <img class="hover-img" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-4.png" alt="">
-                          </a>
-                          <div class="product-off">
-                            <div class="off">20% OFF</div>
-                          </div>
-                          <div class="product-hover">
-                            <ul class="cart-action">
-                              <li class="wishlist">
-                                <a href="#">
-                                  <i class="fa-regular fa-heart"></i>
-                                </a>
-                              </li>
-                              <li class="select-add-to-cart">
-                                <a href="#" class="cart-add">
-                                  Add to Cart
-                                </a>
-                              </li>
-                              <li class="quickview">
-                                <a href="#">
-                                  <i class="fa-regular fa-eye"></i>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="inner">
-                            <h5>
-                              <a href="#">Top Handle Handbag</a>
-                            </h5>
-                            <div class="product-price">
-                              <span class="price old-price">$80</span>
-                              <span class="price new-price">$60</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-activation">
-                <div class="slick-list">
-                  <div class="slick-track">
-                    <div class="slick-single-layout">
-                      <div class="arrival-products">
-                        <div class="thumbnail">
-                          <a href="#">
-                            <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-1.png" alt="">
-                            <img class="hover-img" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-4.png" alt="">
-                          </a>
-                          <div class="product-off">
-                            <div class="off">20% OFF</div>
-                          </div>
-                          <div class="product-hover">
-                            <ul class="cart-action">
-                              <li class="wishlist">
-                                <a href="#">
-                                  <i class="fa-regular fa-heart"></i>
-                                </a>
-                              </li>
-                              <li class="select-add-to-cart">
-                                <a href="#" class="cart-add">
-                                  Add to Cart
-                                </a>
-                              </li>
-                              <li class="quickview">
-                                <a href="#">
-                                  <i class="fa-regular fa-eye"></i>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="inner">
-                            <h5>
-                              <a href="#">Top Handle Handbag</a>
-                            </h5>
-                            <div class="product-price">
-                              <span class="price old-price">$80</span>
-                              <span class="price new-price">$60</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-activation">
-                <div class="slick-list">
-                  <div class="slick-track">
-                    <div class="slick-single-layout">
-                      <div class="arrival-products">
-                        <div class="thumbnail">
-                          <a href="#">
-                            <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-1.png" alt="">
-                            <img class="hover-img" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-4.png" alt="">
-                          </a>
-                          <div class="product-off">
-                            <div class="off">20% OFF</div>
-                          </div>
-                          <div class="product-hover">
-                            <ul class="cart-action">
-                              <li class="wishlist">
-                                <a href="#">
-                                  <i class="fa-regular fa-heart"></i>
-                                </a>
-                              </li>
-                              <li class="select-add-to-cart">
-                                <a href="#" class="cart-add">
-                                  Add to Cart
-                                </a>
-                              </li>
-                              <li class="quickview">
-                                <a href="#">
-                                  <i class="fa-regular fa-eye"></i>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="inner">
-                            <h5>
-                              <a href="#">Top Handle Handbag</a>
-                            </h5>
-                            <div class="product-price">
-                              <span class="price old-price">$80</span>
-                              <span class="price new-price">$60</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-activation">
-                <div class="slick-list">
-                  <div class="slick-track">
-                    <div class="slick-single-layout">
-                      <div class="arrival-products">
-                        <div class="thumbnail">
-                          <a href="#">
-                            <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-1.png" alt="">
-                            <img class="hover-img" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-4.png" alt="">
-                          </a>
-                          <div class="product-off">
-                            <div class="off">20% OFF</div>
-                          </div>
-                          <div class="product-hover">
-                            <ul class="cart-action">
-                              <li class="wishlist">
-                                <a href="#">
-                                  <i class="fa-regular fa-heart"></i>
-                                </a>
-                              </li>
-                              <li class="select-add-to-cart">
-                                <a href="#" class="cart-add">
-                                  Add to Cart
-                                </a>
-                              </li>
-                              <li class="quickview">
-                                <a href="#">
-                                  <i class="fa-regular fa-eye"></i>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="inner">
-                            <h5>
-                              <a href="#">Top Handle Handbag</a>
-                            </h5>
-                            <div class="product-price">
-                              <span class="price old-price">$80</span>
-                              <span class="price new-price">$60</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-activation">
-                <div class="slick-list">
-                  <div class="slick-track">
-                    <div class="slick-single-layout">
-                      <div class="arrival-products">
-                        <div class="thumbnail">
-                          <a href="#">
-                            <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-1.png" alt="">
-                            <img class="hover-img" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-4.png" alt="">
-                          </a>
-                          <div class="product-off">
-                            <div class="off">20% OFF</div>
-                          </div>
-                          <div class="product-hover">
-                            <ul class="cart-action">
-                              <li class="wishlist">
-                                <a href="#">
-                                  <i class="fa-regular fa-heart"></i>
-                                </a>
-                              </li>
-                              <li class="select-add-to-cart">
-                                <a href="#" class="cart-add">
-                                  Add to Cart
-                                </a>
-                              </li>
-                              <li class="quickview">
-                                <a href="#">
-                                  <i class="fa-regular fa-eye"></i>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="inner">
-                            <h5>
-                              <a href="#">Top Handle Handbag</a>
-                            </h5>
-                            <div class="product-price">
-                              <span class="price old-price">$80</span>
-                              <span class="price new-price">$60</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+               -->
+              
               <button class="next-arrow">
                 <i class="fa-solid fa-arrow-right-long"></i>
               </button>
@@ -2054,60 +1711,160 @@
       </div> -->
     </footer>
     <div class="cart-sidebar">
-      <div class="cart-content">
-        <div class="cart-header">
+      <div class="cart-content flex">
+        <div class="cart-header flex aic jcsb">
           <h2 class="header-title">Cart review</h2>
           <button class="close-btn">
-            <i class="fa-regular fa-circle-xmark"></i>
+            <i class="fa-solid fa-x"></i>
           </button>
         </div>
         <div class="cart-body">
-          <ul class="cart-item">
-            <li>
+          <ul class="cart-item-list">
+            Cart is Empty
+            <!-- <li class="cart-item flex">
               <div class="item-img">
-                <a href="">
-                  <img src="" alt="">
+                <a href="#">
+                  <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-01.png" alt="">
                 </a>
-                <button class="close-btn"></button>
-                <div class="item-content">
+                <button class="close-btn">
+                  <i class="fa-solid fa-x"></i>
+                </button>
+              </div>
+              <div class="item-content">
                   <div class="product-rating">
-                    <span class="icon"></span>
-                    <span class="rating-number"></span>
+                    <span class="icon">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span class="rating-number">(102)</span>
                   </div>
-                </div>
+                  <h3 class="item-title">
+                    <a href="#">Wireless PS Handler</a>
+                  </h3>
+                  <div class="item-price">
+                    <span class="price">$</span>155.00
+                  </div>
+                  <div class="item-quantity flex aic">
+                    <span class="minus">-</span>
+                    <span class="quantity flex aic jcc">1</span>
+                    <span class="plus">+</span>
+                  </div>
               </div>
             </li>
-            <li>
+            <li class="cart-item flex">
               <div class="item-img">
-                <a href="">
-                  <img src="" alt="">
+                <a href="#">
+                  <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-01.png" alt="">
                 </a>
-                <button class="close-btn"></button>
-                <div class="item-content">
+                <button class="close-btn">
+                  <i class="fa-solid fa-x"></i>
+                </button>
+              </div>
+              <div class="item-content">
                   <div class="product-rating">
-                    <span class="icon"></span>
-                    <span class="rating-number"></span>
+                    <span class="icon">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span class="rating-number">(102)</span>
                   </div>
-                </div>
+                  <h3 class="item-title">
+                    <a href="#">Wireless PS Handler</a>
+                  </h3>
+                  <div class="item-price">
+                    <span class="price">$</span>155.00
+                  </div>
+                  <div class="item-quantity flex aic">
+                    <span class="minus">-</span>
+                    <span class="quantity flex aic jcc">1</span>
+                    <span class="plus">+</span>
+                  </div>
               </div>
             </li>
-            <li>
+            <li class="cart-item flex">
               <div class="item-img">
-                <a href="">
-                  <img src="" alt="">
+                <a href="#">
+                  <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-01.png" alt="">
                 </a>
-                <button class="close-btn"></button>
-                <div class="item-content">
+                <button class="close-btn">
+                  <i class="fa-solid fa-x"></i>
+                </button>
+              </div>
+              <div class="item-content">
                   <div class="product-rating">
-                    <span class="icon"></span>
-                    <span class="rating-number"></span>
+                    <span class="icon">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span class="rating-number">(102)</span>
                   </div>
-                </div>
+                  <h3 class="item-title">
+                    <a href="#">Wireless PS Handler</a>
+                  </h3>
+                  <div class="item-price">
+                    <span class="price">$</span>155.00
+                  </div>
+                  <div class="item-quantity flex aic">
+                    <span class="minus">-</span>
+                    <span class="quantity flex aic jcc">1</span>
+                    <span class="plus">+</span>
+                  </div>
               </div>
             </li>
+            <li class="cart-item flex">
+              <div class="item-img">
+                <a href="#">
+                  <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-01.png" alt="">
+                </a>
+                <button class="close-btn">
+                  <i class="fa-solid fa-x"></i>
+                </button>
+              </div>
+              <div class="item-content">
+                  <div class="product-rating">
+                    <span class="icon">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span class="rating-number">(102)</span>
+                  </div>
+                  <h3 class="item-title">
+                    <a href="#">Wireless PS Handler</a>
+                  </h3>
+                  <div class="item-price">
+                    <span class="price">$</span>155.00
+                  </div>
+                  <div class="item-quantity flex aic">
+                    <span class="minus">-</span>
+                    <span class="quantity flex aic jcc">1</span>
+                    <span class="plus">+</span>
+                  </div>
+              </div>
+            </li> -->
           </ul>
         </div>
-        <div class="cart-footer"></div>
+        <div class="cart-footer">
+          <h3 class="total flex jcsb aic">
+            <span class="sub-total">Subtotal:</span>
+            <span class="amount">$1000.00</span>
+          </h3>
+          <div class="group-btn">
+            <a href="#" class="view-cart">View Cart</a>
+            <a href="#" class="checkout">Checkout</a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
